@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Whack a mole</h1>
+    <div class="disp">
+      <h2>Score:&nbsp;</h2>
+      <h3 id="score">0</h3>
+    </div>
+    <div class="disp">
+      <h2>Time Left:&nbsp;</h2>
+      <h3 id="time-left">10</h3>
+    </div>
+    <div class="grid">
+      <div class="row">
+        <div onclick="handleClick(this)" class="square"></div>
+        <div onclick="handleClick(this)" class="square"></div>
+        <div onclick="handleClick(this)" class="square"></div>
+      </div>
+      <div class="row">
+        <div onclick="handleClick(this)" class="square"></div>
+        <div onclick="handleClick(this)" class="square"></div>
+        <div onclick="handleClick(this)" class="square"></div>
+      </div>
+      <div class="row">
+        <div onclick="handleClick(this)" class="square"></div>
+        <div onclick="handleClick(this)" class="square"></div>
+        <div onclick="handleClick(this)" class="square"></div>
+      </div>
+    </div>
+    <section>
+      <button id="start" onclick="start()">start</button>
+      <button id="reset" onclick="reset()">reset</button>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
